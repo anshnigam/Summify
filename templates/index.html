@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Text Summarization</title>
+    <link rel="stylesheet" href="/static/css/index.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Summify</h1>
+        <form action="/resultArt" method="post">
+            <label for="text">Enter text to summarize:</label>
+            <textarea id="article" name="article" rows="12" required></textarea>
+            <label for="text">Enter approximate length of summary: <input type="number" name="length" required></label>
+            <button type="submit" value="Summarize">Press to summarize.</button>
+            
+        </form>
+        <br>
+        <form action="/resultLink" method="post">
+            <label for="text">OR enter the URL:</label>
+            <textarea id="link" name="link" rows="1" required></textarea>
+            <label for="text">Enter approximate length of summary: <input type="number" name="length" required></label>
+            <button type="submit" value="Summarize">Press to summarize.</button>
+        </form>
+        <h2 class="result-title">Summary:</h2>
+        <div class="result">
+            {{fin_summary}}
+        </div>
+    </div>
+</body>
+
+</html>

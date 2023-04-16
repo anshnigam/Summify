@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>transactions</title>
+      <link rel="stylesheet" href="/static/css/index.css">
+   </head>
+   <body>
+      <h3>Data Transactions to Server</h3>
+      <br>
+      <table>
+         <thead>
+            <th>IP Address</th>
+            <th>Content</th>
+            <th>Length</th>
+         </thead>
+         {% for data in profiles %}
+         <tbody>
+            <td>{{data.ip}}</td>
+            <td>{{data.cont}}</td>
+            <td>{{data.length}}</td>
+         </tbody>
+         {% endfor%}
+      </table>
+   </body>
+</html>

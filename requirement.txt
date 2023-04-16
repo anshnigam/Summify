@@ -1,0 +1,11 @@
+Steps to run nlpfinal.ipynb and create model (better to use colab).
+Step 1: Uncomment and run the first cells to install dependencies.
+Step 2: Run all subsequent cells
+
+Steps to run project:
+Step 1: Setup Anaconda, switch to base (conda) kernel.
+Step 2: Run the following commands.
+pip install flask
+pip install transformers
+Step 3: Switch to Code directory and run.
+python app.py
